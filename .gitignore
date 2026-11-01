@@ -1,0 +1,52 @@
+# ============================================================
+# THÔNG TIN RIÊNG TƯ / CẤU HÌNH THẬT
+# ============================================================
+# Không commit tài khoản, mật khẩu hoặc cấu hình DB đang sử dụng.
+/config/*.properties
+!/config/database.example.properties
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+
+# ============================================================
+# DATABASE VÀ DỮ LIỆU CHẠY THẬT
+# ============================================================
+# Bao gồm MySQL local, backup, TSV tài khoản/lịch sử và PID/log DB.
+/data/
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# ============================================================
+# FILE BUILD, TEST VÀ THƯ VIỆN NHỊ PHÂN
+# ============================================================
+/dist/
+/out/
+/client-test/
+/lib/*.jar
+*.class
+*.jar
+*.log
+*.tmp
+*.bak
+hs_err_pid*
+replay_pid*
+
+# ============================================================
+# IDE / HỆ ĐIỀU HÀNH
+# ============================================================
+/.idea/
+/.vscode/
+/.settings/
+*.iml
+.classpath
+.project
+.DS_Store
+Thumbs.db
+Desktop.ini
